@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="586.0" maxWidth="-Infinity" minHeight="516.0" minWidth="-Infinity" onMouseEntered="#checkTypeUser" prefHeight="586.0" prefWidth="374.0" style="-fx-background-color: #547594;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.GereMenu.GestionUser.GereAction.Add.Add">
+   <children>
+      <VBox layoutY="8.0" prefHeight="505.0" prefWidth="374.0">
+         <children>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="87.0" text="Nom" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputNom" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="87.0" text="Prenom" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputPrenom" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="87.0" text="Tel" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputTel" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="87.0" text="CIN" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputCIN" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="108.0" text="UserName" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputUserName" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="108.0" text="Password" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputPassword" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="97.0" text="TypeUser" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="typeUser" layoutX="181.0" layoutY="18.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="116.0" text="Pharmacie" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboPharmacie" disable="true" layoutX="181.0" layoutY="20.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="97.0" text="Admin" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXToggleButton fx:id="admin" disable="true" layoutX="172.0" layoutY="8.0" size="7.0" text="select" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="97.0" text="Image" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="181.0" layoutY="18.0" onMouseClicked="#chooseImg" style="-fx-background-color: #346ca1;" text="choose" textFill="WHITE">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXCheckBox fx:id="validationImg" disable="true" layoutX="249.0" layoutY="21.0" text="valide">
+                     <font>
+                        <Font name="Lucida Console" size="9.0" />
+                     </font>
+                  </JFXCheckBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <JFXButton layoutX="302.0" layoutY="539.0" onMouseClicked="#addUser" prefHeight="33.0" prefWidth="58.0" style="-fx-background-color: #224e78;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="232.0" layoutY="539.0" onMouseClicked="#reset" prefHeight="33.0" prefWidth="58.0" style="-fx-background-color: #224e78;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="notification" layoutX="176.0" layoutY="501.0" prefHeight="23.0" prefWidth="134.0" text="*notification" textFill="#1b0404">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

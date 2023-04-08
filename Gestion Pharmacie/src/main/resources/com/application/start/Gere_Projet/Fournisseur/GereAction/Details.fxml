@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="586.0" maxWidth="-Infinity" minHeight="586.0" minWidth="-Infinity" prefHeight="586.0" prefWidth="421.0" style="-fx-background-color: #547594;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.GereMenu.GestionFournisseur.GereAction.Detail">
+   <children>
+      <VBox layoutY="8.0" prefHeight="532.0" prefWidth="421.0">
+         <children>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="Code        " textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="code" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="Nom" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nom" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="DCI1" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DCI1" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="Dosage" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dosage" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="U Dosage" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="UNITE_DOSAGE1" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="Forme" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="FORME" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="Presenstation" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="PRESENTATION" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="PPV" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="PPV" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="PH" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="PH" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="Prix BR" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="PRIX_BR" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="6.0" prefHeight="39.0" prefWidth="160.0" text="T Rmbrmnt" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TAUX_REMBOURSEMENT" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="234.0" textFill="#241818">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <JFXButton fx:id="Back" layoutX="329.0" layoutY="539.0" onAction="#gereAction" onMouseClicked="#back" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: #224e78;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+CREATE TABLE Users(
+	idUser int NOT Null ,
+    userName varchar(255) UNIQUE,
+    passwordd varchar(255),
+    etat Boolean ,
+    dateFin Date,
+    img longblob ,
+    FOREIGN KEY (idUser) REFERENCES   persons(idPersonne ) 
+
+
+
+
+    
+)

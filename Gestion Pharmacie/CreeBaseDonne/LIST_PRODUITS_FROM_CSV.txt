@@ -1,0 +1,21 @@
+
+
+CREATE TABLE Liste_Produits (
+    idListe_Produits int NOT NULL AUTO_INCREMENT,
+    CodeProduits varchar(255),
+    NOM varchar(255),
+    DCI1 varchar(255),
+    DOSAGE1 varchar(255),
+    UNITE_DOSAGE1 varchar(255),
+    FORME varchar(255),
+    PRESENTATION varchar(255),
+    PPV varchar(255),
+    PH varchar(255),
+    PRIX_BR varchar(255),
+    PRINCEPS_GENERIQUE varchar(255),
+    TAUX_REMBOURSEMENT varchar(255),
+  
+    PRIMARY KEY (idListe_Produits)
+);
+
+ALTER TABLE Liste_Produits AUTO_INCREMENT=100;

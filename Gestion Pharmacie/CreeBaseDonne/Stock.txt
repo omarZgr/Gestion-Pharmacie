@@ -1,0 +1,32 @@
+########Creation Stock########
+
+CREATE TABLE Stock(
+   idStock int NOT NULL AUTO_INCREMENT,
+    idPharmacie int ,
+    idProduits_Du_Stock int ,
+    Ville varchar(255),
+    adress varchar(255) ,
+    type varchar(255) ,
+    PRIMARY KEY (idStock),
+    FOREIGN KEY (idPharmacie) REFERENCES  pharmacie(idPharmacie),
+    FOREIGN KEY (idProduits_Du_Stock) REFERENCES  Produits_Du_Stock(idProduit )
+    
+   )   
+    ALTER TABLE stock AUTO_INCREMENT=43;
+
+########Creation Produits du Stock########
+
+CREATE TABLE Produits_Du_Stock(
+    idProduit int ,
+    Quantite varchar(255), 
+    FOREIGN KEY (idProduit) REFERENCES  liste_produits(idListe_Produits )   
+   )  
+
+
+########Insere########
+INSERT INTO `stock` (Ville, adress, type) VALUES ('Casa', "Rue Omar Zougrar",'Global');
+INSERT INTO `stock` (`idPharmacie`,type) VALUES (1223,"Locale");
+INSERT INTO `stock` (`idPharmacie`,type) VALUES (1224,"Locale");
+INSERT INTO `stock` (`idPharmacie`,type) VALUES (1225,"Locale");
+INSERT INTO `stock` (`idPharmacie`,type) VALUES (1226,"Locale");
+INSERT INTO `stock` (`idPharmacie`,type) VALUES (1227,"Locale");

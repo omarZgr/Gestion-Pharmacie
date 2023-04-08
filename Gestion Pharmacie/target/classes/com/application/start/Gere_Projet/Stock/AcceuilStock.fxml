@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableRow?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="704.0" style="-fx-background-color: #99BCBA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.GereMenu.GestionStock.Acceuil_Stock">
+   <children>
+      <Label layoutX="381.0" layoutY="27.0" prefHeight="39.0" prefWidth="69.0" text="Stock" textFill="#241818">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comboStock" layoutX="461.0" layoutY="29.0" prefHeight="25.0" prefWidth="153.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="668.0" layoutY="51.0" onMouseClicked="#chercher" size="20" tabSize="12">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <JFXTreeTableRow />
+      <JFXButton fx:id="details" layoutX="531.0" layoutY="489.0" onAction="#gereAction" prefHeight="42.0" prefWidth="103.0" style="-fx-background-color: #719885;" text="Detailes" textFill="#f6f6f6">
+         <font>
+            <Font name="Book Antiqua" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="27.0" layoutY="22.0" prefHeight="39.0" prefWidth="103.0" text="Produit" textFill="#241818">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="inputProduit" layoutX="124.0" layoutY="29.0" prefHeight="25.0" prefWidth="153.0" />
+      <TableView fx:id="TableStock" layoutX="27.0" layoutY="98.0" prefHeight="350.0" prefWidth="647.0">
+        <columns>
+          <TableColumn fx:id="Code" prefWidth="175.33333778381348" text="Code" />
+          <TableColumn fx:id="Nom" prefWidth="157.99998474121094" text="Nom" />
+            <TableColumn fx:id="Dosage" prefWidth="74.0" text="Dosage" />
+            <TableColumn fx:id="T_Rem" prefWidth="58.6666259765625" text="T_Rem" />
+            <TableColumn fx:id="Localisation" prefWidth="104.66665649414062" text="Localisation" />
+            <TableColumn fx:id="Quantite" prefWidth="84.66668701171875" text="Quantite " />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

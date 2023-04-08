@@ -1,0 +1,10 @@
+CREATE TABLE Livreur(
+	idLivreur int NOT Null ,
+    padge varchar(255) UNIQUE,
+    FOREIGN KEY (idLivreur) REFERENCES  users(idUser)
+
+
+
+
+    
+)

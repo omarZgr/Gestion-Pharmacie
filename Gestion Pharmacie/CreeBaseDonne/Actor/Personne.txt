@@ -1,0 +1,11 @@
+CREATE TABLE Persons (
+    idPersonne int NOT NULL AUTO_INCREMENT,
+    Nom varchar(255) NOT NULL,
+    Prenom varchar(255),
+    CIN varchar(255) UNIQUE,
+    Tel varchar(255) UNIQUE,
+    DateInscrire Date,
+    PRIMARY KEY (idPersonne)
+);
+
+ALTER TABLE Persons AUTO_INCREMENT=1223;

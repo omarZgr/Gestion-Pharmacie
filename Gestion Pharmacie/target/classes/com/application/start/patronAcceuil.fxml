@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="Box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="566.0" prefWidth="904.0" style="-fx-background-color: #99BCBA;"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.application.start.EspacePatronController"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://javafx.com/javafx/19 ">
+   <left>
+      <AnchorPane maxHeight="566.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0"
+                  prefWidth="200.0" style="-fx-background-color: #6A688F;" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="103.0" prefHeight="37.0" prefWidth="199.0"
+                   text="PatronName" textFill="#f4eec9">
+               <font>
+                  <Font name="Berlin Sans FB" size="33.0"/>
+               </font>
+            </Label>
+            <VBox layoutY="153.0" maxHeight="418.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0"
+                  prefHeight="416.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #555384;">
+               <children>
+                  <JFXButton fx:id="Account" onAction="#swapMenu" prefHeight="61.0" prefWidth="200.0"
+                             style="-fx-background-color: #4c4b69;" text="Account" textFill="#bcb484">
+                     <font>
+                        <Font name="Bookman Old Style" size="24.0"/>
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND"/>
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="Fournisseur" onAction="#swapMenu" prefHeight="61.0" prefWidth="200.0"
+                             style="-fx-background-color: #4c4b69;" text="Fournisseur" textFill="#bcb484">
+                     <font>
+                        <Font name="Bookman Old Style" size="24.0"/>
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND"/>
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton prefHeight="61.0" prefWidth="200.0" style="-fx-background-color: #4c4b69;" text="Button"
+                             textFill="#bcb484">
+                     <font>
+                        <Font name="Bookman Old Style" size="24.0"/>
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND"/>
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton prefHeight="61.0" prefWidth="200.0" style="-fx-background-color: #4c4b69;" text="Button"
+                             textFill="#bcb484">
+                     <font>
+                        <Font name="Bookman Old Style" size="24.0"/>
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND"/>
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton prefHeight="61.0" prefWidth="200.0" style="-fx-background-color: #4c4b69;" text="Button"
+                             textFill="#bcb484">
+                     <font>
+                        <Font name="Bookman Old Style" size="24.0"/>
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND"/>
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton prefHeight="61.0" prefWidth="200.0" style="-fx-background-color: #4c4b69;" text="Button"
+                             textFill="#bcb484">
+                     <font>
+                        <Font name="Bookman Old Style" size="24.0"/>
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND"/>
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <ImageView fitHeight="92.0" fitWidth="86.0" layoutX="58.0" layoutY="11.0" pickOnBounds="true"
+                       preserveRatio="true">
+               <image>
+                  <Image url="@image/iconePharmacie.png"/>
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

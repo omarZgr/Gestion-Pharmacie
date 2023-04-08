@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableRow?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="704.0" style="-fx-background-color: #99BCBA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.GereMenu.GestionUser.Acceuil_User">
+   <children>
+      <Label layoutX="20.0" layoutY="23.0" prefHeight="39.0" prefWidth="103.0" text="Type User" textFill="#241818">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="typeUser" layoutX="123.0" layoutY="30.0" prefHeight="25.0" prefWidth="153.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <RadioButton fx:id="Actif" layoutX="583.0" layoutY="45.0" mnemonicParsing="false" selected="true" text="Actif">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></RadioButton>
+      <Label layoutX="313.0" layoutY="26.0" prefHeight="39.0" prefWidth="103.0" text="Prenom" textFill="#241818">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="inputPrenom" layoutX="411.0" layoutY="31.0" promptText="siais un value">
+         <font>
+            <Font name="Berlin Sans FB" size="13.0" />
+         </font></JFXTextField>
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="659.0" layoutY="59.0" onMouseClicked="#chercher" size="20" tabSize="12">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <JFXTreeTableRow />
+      <JFXButton fx:id="add" layoutX="79.0" layoutY="489.0" onAction="#gereAction" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #719885;" text="Add" textFill="#f6f6f6">
+         <font>
+            <Font name="Book Antiqua" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="modifiy" layoutX="207.0" layoutY="489.0" onAction="#gereAction" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #719885;" text="Modifiy" textFill="#f6f6f6">
+         <font>
+            <Font name="Book Antiqua" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="remove" layoutX="334.0" layoutY="489.0" onAction="#gereAction" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #719885;" text="Remove" textFill="#f6f6f6">
+         <font>
+            <Font name="Book Antiqua" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="details" layoutX="531.0" layoutY="489.0" onAction="#gereAction" prefHeight="42.0" prefWidth="103.0" style="-fx-background-color: #719885;" text="Detailes" textFill="#f6f6f6">
+         <font>
+            <Font name="Book Antiqua" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="TableUser" layoutX="38.0" layoutY="104.0" prefHeight="350.0" prefWidth="621.0">
+        <columns>
+          <TableColumn fx:id="Prenom" editable="false" maxWidth="350.0" minWidth="185.3" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="Nom" editable="false" maxWidth="350.0" minWidth="185.3" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="Tel" editable="false" maxWidth="350.0" minWidth="185.3" prefWidth="75.0" text="Tel" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+CREATE TABLE Phero(
+	idPhero int NOT Null ,
+    idPharmacie int not null,
+    responsabilte varchar(255) UNIQUE,
+    FOREIGN KEY (idPhero) REFERENCES  users(idUser  ), 
+    FOREIGN KEY (idPharmacie) REFERENCES  pharmacie(idPharmacie   )
+
+
+
+
+    
+)

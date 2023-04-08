@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="586.0" maxWidth="-Infinity" minHeight="516.0" minWidth="-Infinity" prefHeight="586.0" prefWidth="374.0" style="-fx-background-color: #547594;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.GereMenu.GestionUser.GereAction.Suivi.Suivi">
+   <children>
+      <VBox prefHeight="532.0" prefWidth="374.0">
+         <children>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="87.0" text="Nom" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="outputNom" editable="false" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="87.0" text="Prenom" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="outputPrenom" editable="false" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="87.0" text="Tel" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Tel" editable="false" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="87.0" text="CIN" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="outputCIN" editable="false" layoutX="180.0" layoutY="18.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="97.0" text="TypeUser" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="OutputTypeUser" layoutX="181.0" layoutY="18.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="19.0" prefWidth="374.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="116.0" text="Pharmacie" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="outputComboPharmacie" disable="true" layoutX="181.0" layoutY="20.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="33.0" prefWidth="374.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="97.0" text="Admin" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXToggleButton fx:id="outputAdmin" disable="true" layoutX="172.0" layoutY="8.0" size="7.0" text="select" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="126.0" text="Date Debut" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="DateDebut" editable="false" layoutX="181.0" layoutY="17.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="126.0" text="Date Fin" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="DateFin" editable="false" layoutX="181.0" layoutY="17.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="361.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="10.0" prefHeight="39.0" prefWidth="126.0" text="Etat" textFill="#241818">
+                     <font>
+                        <Font name="MV Boli" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXToggleButton fx:id="outputEtat" disable="true" layoutX="170.0" layoutY="10.0" size="7.0" text="Active" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <JFXButton layoutX="295.0" layoutY="539.0" onMouseClicked="#back" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: #224e78;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="MS Reference Sans Serif" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

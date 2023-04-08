@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.JFXTreeTableRow?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="704.0" style="-fx-background-color: #99BCBA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.GereMenu.GestionFournisseur.Acceuil_Fournisseur">
+   <children>
+      <JFXTreeTableRow />
+      <JFXButton fx:id="Next" layoutX="531.0" layoutY="489.0" onAction="#gereAction" prefHeight="42.0" prefWidth="103.0" style="-fx-background-color: #719885;" text="Next" textFill="#f6f6f6">
+         <font>
+            <Font name="Book Antiqua" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="34.0" layoutY="24.0" prefHeight="39.0" prefWidth="103.0" text="Produit" textFill="#241818">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="inputProduit" layoutX="141.0" layoutY="28.0" prefHeight="25.0" prefWidth="222.0" />
+      <TableView fx:id="TableStock" layoutX="27.0" layoutY="113.0" onMouseClicked="#ClickedINTable" prefHeight="350.0" prefWidth="647.0">
+         <columns>
+            <TableColumn fx:id="Select" prefWidth="48.00000190734863" text="Select" />
+            <TableColumn fx:id="Code" prefWidth="121.33333587646484" text="Code" />
+            <TableColumn fx:id="Nom" prefWidth="166.0000457763672" text="Nom" />
+            <TableColumn fx:id="Dosage" prefWidth="92.6666259765625" text="Dosage" />
+            <TableColumn fx:id="Facture" prefWidth="114.66665649414062" text="Facture" />
+            <TableColumn fx:id="Quantite" prefWidth="110.0" text="Quantit now" />
+         </columns>
+      </TableView>
+      <JFXToggleButton fx:id="ByNom" layoutX="378.0" layoutY="27.0" prefHeight="24.0" prefWidth="103.0" selected="true" size="7.0" text="Nom">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Filtre" />
+         </toggleGroup>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="ByCode" layoutX="485.0" layoutY="27.0" prefHeight="24.0" prefWidth="103.0" size="7.0" text="Code" toggleGroup="$Filtre">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </JFXToggleButton>
+      <Label fx:id="notification" layoutX="44.0" layoutY="82.0" prefHeight="20.0" prefWidth="133.0" text="Notification" textFill="#055148" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Details" layoutX="410.0" layoutY="489.0" onAction="#gereAction" prefHeight="42.0" prefWidth="103.0" style="-fx-background-color: #719885;" text="Detailes" textFill="#f6f6f6">
+         <font>
+            <Font name="Book Antiqua" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXToggleButton fx:id="ViderTable" layoutX="26.0" layoutY="466.0" onAction="#gereAction" prefHeight="25.0" prefWidth="86.0" size="7.0" text="Vider">
+         <toggleGroup>
+            <ToggleGroup fx:id="Filtre1" />
+         </toggleGroup>
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </JFXToggleButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+#######Create########
+
+CREATE TABLE Pharmacie (
+    idPharmacie	 int NOT NULL AUTO_INCREMENT,
+    NomPrive varchar(255) NOT NULL,
+    NomPublic varchar(255) NOT NULL,
+    Ville varchar(255),
+    adress varchar(255) UNIQUE,
+    DateCreer Date,
+    PRIMARY KEY (idPharmacie)
+);
+
+ALTER TABLE pharmacie AUTO_INCREMENT=1223;
+
+######Inser Data########
+
+INSERT INTO `pharmacie` (`idPharmacie`, `NomPrive`, `NomPublic`, `Ville`, `adress`, `DateCreer`) VALUES (NULL, 'pharmacie02', 'PharManger', 'tetouan', 'Rue Abdelkader El Moujtafi, Quartier Al Fath, Numéro 17', '2020-03-18');
+
+
+INSERT INTO `pharmacie` (`idPharmacie`, `NomPrive`, `NomPublic`, `Ville`, `adress`, `DateCreer`) VALUES (NULL, 'pharmacie03', 'PharManger', 'tanger', 'Boulevard Mohamed V, Quartier Al Wahda, Numéro 53', '2021-02-1');
+
+
+INSERT INTO `pharmacie` (`idPharmacie`, `NomPrive`, `NomPublic`, `Ville`, `adress`, `DateCreer`) VALUES (NULL, 'pharmacie04', 'PharManger', 'casa', 'Avenue Mohammed VI, Quartier Al Houda, Numéro 2', '2022-08-18');
+
+
+INSERT INTO `pharmacie` (`idPharmacie`, `NomPrive`, `NomPublic`, `Ville`, `adress`, `DateCreer`) VALUES (NULL, 'pharmacie05', 'PharManger', 'rabat', 'Rue Ibn Batouta, Quartier El Manar, Numéro 8', '2023-02-18');
